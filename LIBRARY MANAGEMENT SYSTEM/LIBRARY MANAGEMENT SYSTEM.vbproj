@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2A3DA28-A01C-4BB0-A9AC-4E61E34474FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LIBRARY_MANAGEMENT_SYSTEM.Form1</StartupObject>
+    <RootNamespace>LIBRARY_MANAGEMENT_SYSTEM</RootNamespace>
+    <AssemblyName>LIBRARY MANAGEMENT SYSTEM</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LIBRARY MANAGEMENT SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LIBRARY MANAGEMENT SYSTEM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book_Details.Designer.vb">
+      <DependentUpon>Book_Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIBRARY.Designer.vb">
+      <DependentUpon>LIBRARY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LIBRARY_MANAGEMENTDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBRARY_MANAGEMENTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARY_MANAGEMENTDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBRARY_MANAGEMENTDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LIBRARY_MANAGEMENTDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LIBRARY_MANAGEMENTDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Member details.Designer.vb">
+      <DependentUpon>Member details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Member details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operations.Designer.vb">
+      <DependentUpon>Operations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Operations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WELCOME FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WELCOME FORM.Designer.vb">
+      <DependentUpon>WELCOME FORM.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN FORM.Designer.vb">
+      <DependentUpon>LOGIN FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Book_Details.resx">
+      <DependentUpon>Book_Details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIBRARY.resx">
+      <DependentUpon>LIBRARY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN FORM.resx">
+      <DependentUpon>LOGIN FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member details.resx">
+      <DependentUpon>Member details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operations.resx">
+      <DependentUpon>Operations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WELCOME FORM.resx">
+      <DependentUpon>WELCOME FORM.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="LIBRARY_MANAGEMENTDataSet.xsc">
+      <DependentUpon>LIBRARY_MANAGEMENTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LIBRARY_MANAGEMENTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBRARY_MANAGEMENTDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBRARY_MANAGEMENTDataSet.xss">
+      <DependentUpon>LIBRARY_MANAGEMENTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LIBRARY_MANAGEMENTDataSet1.xsc">
+      <DependentUpon>LIBRARY_MANAGEMENTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LIBRARY_MANAGEMENTDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBRARY_MANAGEMENTDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBRARY_MANAGEMENTDataSet1.xss">
+      <DependentUpon>LIBRARY_MANAGEMENTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LIBRARY_MANAGEMENTDataSet2.xsc">
+      <DependentUpon>LIBRARY_MANAGEMENTDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LIBRARY_MANAGEMENTDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LIBRARY_MANAGEMENTDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LIBRARY_MANAGEMENTDataSet2.xss">
+      <DependentUpon>LIBRARY_MANAGEMENTDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="bin\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LIBRARY MANAGEMENT.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
